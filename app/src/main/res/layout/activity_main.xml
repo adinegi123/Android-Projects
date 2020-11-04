@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".MainActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/textView"
+    />
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="getTodos"
+    android:text="GET TODOS"
+    android:id="@+id/btn_one"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="getTodoUsingRouteParameter"
+    android:id="@+id/btn_two"
+    android:text=" GET TODOS using Route Parameter"
+    android:layout_below="@id/btn_one"
+    android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_two"
+        android:layout_centerHorizontal="true"
+        android:onClick="getTodoUsingQuery"
+        android:text="GET TODOS using query" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="postTodo"
+    android:id="@+id/btn_four"
+    android:layout_below="@id/btn_three"
+    android:layout_centerHorizontal="true"
+    android:text="POST todo" />
+
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>
